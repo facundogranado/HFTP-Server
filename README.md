@@ -2,26 +2,26 @@
 
 Implementación de un servidor de transferencia de archivos basado en un protocolo propio llamado **HFTP (Home-made File Transfer Protocol)**.
 
-El proyecto está desarrollado en **Python 3** utilizando sockets TCP y soporta múltiples clientes concurrentes, transferencia parcial de archivos, modo binario raw, manejo robusto de errores y compatibilidad con la red Tor mediante servicios ocultos `.onion`.
+El proyecto está desarrollado en Python 3 utilizando sockets TCP y soporta múltiples clientes concurrentes, transferencia parcial de archivos, modo binario raw, manejo robusto de errores y compatibilidad con la red Tor mediante servicios ocultos `.onion`.
 
 ---
 
-# 🚀 Características
+# Características
 
-- 📡 Servidor TCP concurrente
-- 📂 Listado de archivos compartidos
-- 📏 Obtención de metadata de archivos
-- ✂️ Descarga parcial de archivos
-- 🔤 Transferencia en Base64
-- 🧱 Transferencia binaria Raw
-- ⚠️ Manejo robusto de errores
-- 🧵 Soporte para múltiples clientes
-- 🧅 Compatibilidad con Tor
-- ✅ Testing automatizado
+- Servidor TCP concurrente
+- Listado de archivos compartidos
+- Obtención de metadata de archivos
+- Descarga parcial de archivos
+- Transferencia en Base64
+- Transferencia binaria Raw
+- Manejo robusto de errores
+- Soporte para múltiples clientes
+- Compatibilidad con Tor
+- Testing automatizado
 
 ---
 
-# 🧠 ¿Qué es HFTP?
+# ¿Qué es HFTP?
 
 HFTP es un protocolo de transferencia de archivos inspirado en protocolos clásicos como FTP y HTTP.
 
@@ -43,7 +43,7 @@ Puerto por defecto:
 
 ---
 
-# 📂 Estructura del proyecto
+# Estructura del proyecto
 
 ```txt
 .
@@ -60,9 +60,9 @@ Puerto por defecto:
 
 ---
 
-# ⚙️ Instalación
+# Instalación
 
-## 1️⃣ Clonar el repositorio
+## 1. Clonar el repositorio
 
 ```bash
 git clone <url-del-repositorio>
@@ -71,7 +71,7 @@ cd hftp-server
 
 ---
 
-## 2️⃣ Crear entorno virtual
+## 2. Crear entorno virtual
 
 ```bash
 python3 -m venv venv
@@ -86,7 +86,7 @@ venv\Scripts\activate
 
 ---
 
-## 3️⃣ Instalar dependencias
+## 3. Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
@@ -94,7 +94,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🚀 Ejecución del servidor
+# Ejecución del servidor
 
 Ejecución básica:
 
@@ -108,7 +108,7 @@ Configuración personalizada:
 python3 server.py -d shared_files -p 19500 -a 0.0.0.0
 ```
 
-### Opciones disponibles
+## Opciones disponibles
 
 | Opción | Descripción |
 |---|---|
@@ -118,9 +118,7 @@ python3 server.py -d shared_files -p 19500 -a 0.0.0.0
 
 ---
 
-# 📡 Comandos del protocolo
-
----
+# Comandos del protocolo
 
 ## `help`
 
@@ -242,9 +240,9 @@ quit\r\n
 
 ---
 
-# 🔁 Modos de transferencia
+# Modos de transferencia
 
-## 📄 Modo Base64
+## Modo Base64
 
 - Payload codificado en Base64
 - Delimitado mediante `\r\n`
@@ -252,7 +250,7 @@ quit\r\n
 
 ---
 
-## 🧱 Modo Raw
+## Modo Raw
 
 - Transferencia binaria exacta
 - Utiliza `Content-Length`
@@ -260,7 +258,7 @@ quit\r\n
 
 ---
 
-# ❌ Códigos de error
+# Códigos de error
 
 | Código | Significado |
 |---|---|
@@ -275,7 +273,7 @@ quit\r\n
 
 ---
 
-# 🧵 Concurrencia
+# Concurrencia
 
 El servidor soporta múltiples clientes simultáneamente utilizando:
 
@@ -287,7 +285,7 @@ Cada conexión se maneja de forma independiente.
 
 ---
 
-# 🛡️ Consideraciones de seguridad
+# Consideraciones de seguridad
 
 Protecciones implementadas:
 
@@ -299,7 +297,7 @@ Protecciones implementadas:
 
 ---
 
-# 🧪 Testing
+# Testing
 
 Ejecutar todos los tests:
 
@@ -321,7 +319,7 @@ python3 grade.py
 
 ---
 
-# 🧅 Ejecución sobre Tor
+# Ejecución sobre Tor
 
 HFTP puede ejecutarse de forma transparente sobre la red Tor utilizando servicios ocultos.
 
@@ -339,7 +337,7 @@ Esto permite:
 
 ---
 
-# 📖 Tecnologías utilizadas
+# Tecnologías utilizadas
 
 - Python 3
 - Sockets TCP
@@ -351,7 +349,7 @@ Esto permite:
 
 ---
 
-# 📌 Ejemplo de ejecución
+# Ejemplo de ejecución
 
 Log del servidor:
 
@@ -366,7 +364,3 @@ Closing connection...
 ```
 
 ---
-
-# 📄 Licencia
-
-Proyecto desarrollado con fines educativos y experimentales.

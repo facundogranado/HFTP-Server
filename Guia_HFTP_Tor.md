@@ -1,10 +1,9 @@
 # Guía práctica: Servidor HFTP como servicio Tor (.onion)
 
-Esta guía permite publicar tu servidor HFTP del Laboratorio 2 como **servicio oculto Tor** (dirección `.onion`) para compartir archivos con otros estudiantes desde casa, sin abrir puertos en el router ni exponerte directamente en Internet.
+Esta guía permite publicar tu servidor HFTP como **servicio oculto Tor** (dirección `.onion`) para compartir archivos con otros estudiantes desde casa, sin abrir puertos en el router ni exponerte directamente en Internet.
 
-> **Relación con el enunciado del Lab 2:** El laboratorio se evalúa **aprobado / no aprobado** (sin nota numérica). **Demostrar HFTP extremo a extremo vía Tor** es un **requisito obligatorio** de la entrega (mismo protocolo, otro camino TCP). Esta guía es el documento de referencia operativa para esa parte; no duplica el enunciado ni sustituye la entrega del servidor y cliente HFTP en el repositorio Git del lab. Para una visión general de la red Tor (conceptos, privacidad, proyecto), ver [torproject.org](https://www.torproject.org/).
 
-**Requisitos:** Linux (Debian/Ubuntu), servidor y cliente HFTP del Lab2 funcionando en red local.
+**Requisitos:** Linux (Debian/Ubuntu), servidor y cliente HFTP.
 
 ---
 
